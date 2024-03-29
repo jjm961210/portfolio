@@ -1,0 +1,66 @@
+@charset "utf-8";
+*{margin:0 auto; padding:0;}
+li{list-style:none;}
+a{color:inherit; text-decoration:none;}
+
+#wrap{ width:100%; margin:0 auto; background:#000;}
+
+.inner{width:85%; margin:0 auto;}
+
+header{width:60%; padding-top:9em; }
+.MYIN{
+  margin:0 auto; display:flex; width:100%; height:250px; 
+  background:#fff; border-radius:35px; 
+}
+figure{
+  width:25%; border-radius:2rem; overflow:hidden; margin:1rem; 
+  background:#aaa; border:5px solid lightgreen; 
+}
+figure>img{width:100%;}
+
+header>.inner>.MYIN>ul {
+  width:75%; align-content: center; 
+  margin:0 auto; text-align:center;
+}
+header .inner .MYIN ul li {
+  background:linear-gradient(30deg, lightseagreen,#000,red);
+  line-height:100%; border-radius:1rem; overflow:hidden;
+  display:block; width:65%; height:17%; font-size:2rem; color:#fff; margin:1rem auto;
+}
+header .inner .MYIN ul li h2{font-weight:bold; padding:.5rem; font-size:2rem; color:#fff;}
+
+
+#container{ width:100%; height:8em; margin:7em 0 20em; }
+.containerBox{
+  opacity:0; width:100%; height:200%; background:#fff; 
+  transition:1s; border-radius:1rem; gap:1px;
+}
+
+
+span{font-size:.8rem;}
+
+.cbox1,.cbox2{width:100%; height:150px; background:#00000040; margin:0 auto;}
+.cbox1>h2,.cbox2>h2{text-align:center; margin:0 auto;}
+
+.cbox1>.TOOL{width:100%; display:flex; }
+.cbox1>.TOOL:hover a{width: 18%; height:6rem;}
+.cbox1>.TOOL:hover a img{ margin-top:0.3rem;}
+
+.cbox1>.TOOL>a{
+  width:2.5rem; height:2.5rem; transition:.6s; border-radius:1rem; margin:.8rem auto; 
+  text-align:center; font-weight:bold; font-size:1.5rem; overflow:hidden;
+  background:linear-gradient(30deg,#00000055,#ff000055); color:#fff;
+}
+.cbox1>.TOOL>a>img{width:2.5rem; height:2.5rem; transition:.6s;}
+.cbox1>.TOOL>a:hover img{width:4rem; height:4rem;}
+.cbox1>.TOOL>a p{height:2.5rem; font-size:1rem;}
+.cbox1>.TOOL>a:hover p{ color:#000; transition:1s; }
+
+
+.cbox2>.PROJECT{width:100%; display:flex;}
+.cbox2>.PROJECT>a{
+  width:12rem; height:5rem; transition:.6s; border-radius:1rem; margin:.8rem auto; 
+  text-align:center; font-weight:bold; font-size:1.5rem; overflow:hidden;
+  background:linear-gradient(30deg,#00000055,#ff000055); color:#fff;
+}
+.cbox2>.PROJECT>a>img{width:5rem; height:2.5rem; border-radius:.5rem; }

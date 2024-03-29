@@ -1,0 +1,203 @@
+@charset "UTF-8";
+*{margin:0; padding:0; text-align:center;}
+li{list-style:none;}
+a{text-decoration:none; color:inherit;}
+body{margin:0 auto; width:100%; height:100%;}
+
+/* 사이트 시작부분 광고영상 */
+#FAV{
+  position:fixed; display:flex; width:100%; height:100%; z-index:1; 
+  transition:1s; top:0; bottom:0; right:0; left:0;  margin:auto;
+  }
+
+/* 메인html, 기초머리&꼬리부분 */
+#wrap{width:100%; margin:0 auto; }
+#inner{width:80%; margin:0 auto; }
+header{
+  display:flex; margin:0 auto; position:fixed; width:80%; height:50px; text-align:center; overflow:hidden;
+  z-index:2;
+}
+header .logo
+{
+  width:25%; position:relative;
+}
+.Ltext{}
+header .logo a{width:100%; height:50px; display:block;}
+header .logo a p{
+  position:absolute; width:100%; height:50px; text-align:center; line-height:50px; 
+  font-weight:bold; opacity:.7;
+}
+header .logo a image{position:absolute;  display:block; width:50%; height:100px;}
+
+header .nav{ width:75%; height:50px;}
+header .nav ul{display:flex; width:100%; height:50px; font-weight:bold; z-index:5;}
+header .nav ul li{
+  width:25%; height:50px; line-height:50px; display:block; inline-size:inherit;
+}
+header ul li a{
+  display:block; width:100%; height:50px; background:#fffb1e9c;
+  transition:.5s; font-size:1rem; box-sizing: border-box; color:#000;
+  }
+
+header ul li:hover a
+{
+  border-radius:15px; background:#ff2a00; color:#fff;
+}
+
+header .loginPage { width:20%; height:50px; background:#faf; overflow:hidden;}
+header .loginPage .ID {width:70%; height:20px;}
+header .loginPage .PW {width:70%; height:20px;}
+
+#slide
+{
+  background-image:url(../images/gdlogo.gif); background-attachment: fixed; background-size:cover;
+  background-repeat: no-repeat; width:100%; height:700px; background-position:top;
+  background-position: center; padding-top:50px;
+}
+
+#BP{
+  margin:25px auto; width:320px; height:100px; z-index:5; color:#000;
+  border-radius:35px; border:10px solid #ff6a00; background:#fff; cursor:pointer;
+}
+#BP>span{color:#ff6a00}
+#AC{
+  width:0; height:0; padding:10px 0; margin:25px auto; 
+  background:url(../images/logomation.gif)300px 200px;
+  background-size:cover; background-position:center;
+  font-weight:bold; line-height:100%; transition:1s; 
+  opacity:0; border-radius:100%; border:5px solid #ee2800;
+}
+.container1{width:100%; height:100px; display:flex; justify-content:center; margin:10px 0;}
+.container2{width:100%; height:100px; display:flex; justify-content:center; margin:0 0 10px;}
+.container3{width:100%; height:100px; display:flex; justify-content:center; margin:0 0 10px;}
+.container4{width:100%; height:100px; display:flex; justify-content:center; margin:0 0 10px;}
+.container5{width:100%; height:100px; display:flex; justify-content:center; margin:0 0 10px;}
+.container1 button, .container2 button, .container3 button, .container4 button, .container5 button{
+  background:none; border:none; cursor:pointer;
+}
+
+
+.container1 .conbox-left{width:0; height:0; margin-right:2%;  transition:1s;}
+.container1 .conbox-right{width:0; height:0; margin-left:2%;  transition:1s;}
+.container1 button{width:100%; height:100%; display:block; transition:0.5s;}
+.container1 .conbox-left:hover button,.container1 .conbox-right:hover button{transform:scale(1.5);}
+
+
+.container2 .conbox-left{width:0; height:0; margin-right:13%;  transition:1s;}
+.container2 .conbox-right{width:0; height:0; margin-left:13%;  transition:1s;}
+.container2 button{width:100%; height:100%; display:block; transition:0.5s;}
+.container2 .conbox-left:hover button,.container2 .conbox-right:hover button{transform:scale(1.5);}
+
+.container3 .conbox-left{width:0; height:0; margin-right:18%;  transition:1s;}
+.container3 .conbox-right{width:0; height:0; margin-left:18%;  transition:1s;}
+.conbox-left button,.conbox-right button{width:100%; height:100%; display:block;}
+.container3 button{width:100%; height:100%; display:block; transition:0.5s;}
+.container3 .conbox-left:hover button,.container3 .conbox-right:hover button{transform:scale(1.5);}
+
+.container4 .conbox-left{width:0; height:0; margin-right:13%;  transition:1s;}
+.container4 .conbox-right{width:0; height:0; margin-left:13%;  transition:1s;}
+.container4 button{width:100%; height:100%; display:block; transition:0.5s;}
+.container4 .conbox-left:hover button,.container4 .conbox-right:hover button{transform:scale(1.5);}
+
+.container5 .conbox-left{width:0; height:0; margin-right:2%;  transition:1s;}
+.container5 .conbox-right{width:0; height:0; margin-left:2%;  transition:1s;}
+.container5 button{width:100%; height:100%; display:block; transition:0.5s;}
+.container5 .conbox-left:hover button,.container5 .conbox-right:hover button{transform:scale(1.5);}
+
+.conbox button img,.conbox-left button img,.conbox-right button img{width:100%; height:100%;}
+
+#banner{margin:100px;}
+#banner>h1{margin:50px; font-size:3rem; text-align:center;}
+#BRT { margin:50px 0 50px; display:flex; justify-content:center; gap:15%; opacity:0; transition:1.5s;}
+
+#BRT .BRT1,#BRT .BRT2{width:45%; height:200px; border-radius:30px; background:#ffa86a;}
+#BRT .BRT1>h2,#BRT .BRT2>h2 {margin:20px; color:#000;}
+.BRT1>p,.BRT2>p{
+  margin:0 auto; padding:10px; color:#fff; border-radius:20px;
+  width:85%; background:#ff2a00; font-size:1rem;
+}
+
+
+
+footer{
+  margin:0 auto; width:100%; height:200px; color:#fff; display:block;
+  overflow:hidden; background:#003f5aea; bottom:0; z-index:10;
+}
+#inner .FTCT{ width:100%; height:100%; border-radius:25px; border:2px solid rgba(0, 128, 0, 0.324); background:#ff4c4ce0;}
+.FTCT h2{
+  float:left; width:30%; height:200px; font-size:2rem;
+  display:block; line-height:200px; overflow:hidden;
+}
+.FTCT p{
+  float:left; width:70%; height:100px; line-height:100px;
+  box-sizing:border-box;
+}
+.FTCT address{
+  float:left; width:70%; height:100px; line-height:100px;
+  box-sizing:border-box;
+}
+
+/* about.html부분 */
+
+#NFceo{margin:0 auto; width:100%; display:flex; justify-content: center;}
+.NCEO,.FCEO{width:30%; height:100px;}
+.NCEO>p>button,.FCEO>p>button{
+  width:120px; height:65px; border:5px solid #fff; overflow:hidden; cursor:pointer;
+  font-size:1rem; border-radius:10px; background:gray; color:#fff; transition:.5s;
+}
+#CA{margin:0 auto; width:100%; display:flex; justify-content: center;}
+.NCA{transition:.5s; margin:0 auto; display:flex; width:50%; transform:scaleY(0); opacity:0;}
+.FCA{transition:.5s; margin:0 auto; display:flex; width:50%; transform:scaleY(0); opacity:0;}
+.FCA>p,.NCA>p{
+  width:100%; height:450px; text-align:left; overflow:scroll; color:#000;
+  border-radius:45px; padding:20px; font-size:16px; background:skyblue;
+}
+.NCA>img{
+  position:absolute; width:200px; height:350px; right:0; top:11.25%;
+  border-radius:45px; background:skyblue; opacity:.27; transition:.5s;
+}
+.NCA>img:hover{
+  opacity:1; padding:20px; background:#fff;
+}
+.FCA>img{
+  position:absolute; width:270px; height:200px; right:0; top:25%;
+  border-radius:45px; background:skyblue; opacity:.27; transition:.5s;
+}
+.FCA>img:hover{
+  opacity:1; padding:20px; background:#fff;
+}
+
+
+
+/* product.html부분 */
+#PRODUCT{z-index:555;}
+#product01, #product02{
+  width:100%; height:350px; padding-top:100px; display:flex;
+  justify-content:space-between;
+}
+.pd{
+  position:relative; width:25%; height:80%; border-radius:0 45px; display:block;
+  overflow:hidden; outline:5px solid #ff2a00; color:#000; transition:.5s;
+}
+.pd:hover{color:#fff; background:#ff2a00b8;}
+.PDIMG{width:100%; height:100%; border-radius:0 45px; transition:.6s;}
+.PDEX{display:none;}
+.PDEX>a{background:#aaa; color:#fff; padding:5px; border-radius:5px; opacity:.7}
+.CLOSE{
+  position:absolute; top:20px; right:20px; width:100px; height:40px; font-size:1rem;
+  color:#000; border-radius:10px; display:none; background:pink; box-sizing:border-box;
+}
+
+
+/* manybuy부분 */
+#MB{padding:150px 0 50px; width:100%; height:100%; text-align:left;}
+#MB>h1{padding:100px 0 50px;}
+#SMB{text-align:left; height:250px; margin-bottom:50px;}
+#SMB>h2{text-align:left;}
+#KC{font-size:20px;}
+#KC>option{font-size:14px;}
+#SMB>input{ text-align:left; font-size:20px; width:350px;}
+#SMB>textarea{
+  max-width:450px; max-height:150px; font-size:1.5rem; text-align:left;
+  min-width:450px; min-height:150px; border:3px solid #ff2a00; border-radius:15px;
+}
